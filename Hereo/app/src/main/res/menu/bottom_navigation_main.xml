@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuicon"
+        android:enabled="true"
+        android:icon="@drawable/menuicon"
+        android:title=""
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/caribantuan"
+        android:enabled="true"
+        android:icon="@drawable/caribantuan"
+        android:title=""
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/profilsaya"
+        android:enabled="true"
+        android:icon="@drawable/profilsaya"
+        android:title="Profil Saya"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/chatpribadi"
+        android:enabled="true"
+        android:icon="@drawable/chatpribadi"
+        android:title=""
+        app:showAsAction="ifRoom" />
+</menu>
