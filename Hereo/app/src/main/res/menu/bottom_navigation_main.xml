@@ -5,13 +5,13 @@
         android:id="@+id/menuicon"
         android:enabled="true"
         android:icon="@drawable/menuicon"
-        android:title=""
+        android:title="Timeline"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/caribantuan"
         android:enabled="true"
         android:icon="@drawable/caribantuan"
-        android:title=""
+        android:title="Cari Bantuan"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/profilsaya"
@@ -23,6 +23,6 @@
         android:id="@+id/chatpribadi"
         android:enabled="true"
         android:icon="@drawable/chatpribadi"
-        android:title=""
+        android:title="Chat Pribadi"
         app:showAsAction="ifRoom" />
 </menu>

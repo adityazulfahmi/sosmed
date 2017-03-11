@@ -1,10 +1,16 @@
 package com.example.ss0051pc.hereo;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
+import android.view.View;
+
+import java.util.zip.Inflater;
 
 public class MainActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
@@ -51,6 +57,14 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     }
                 });
+
+        ActionBar actionBar = getSupportActionBar();
+        LayoutInflater inflator = (LayoutInflater) this .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+        View v = inflator.inflate(R.layout.custom_actionbar, null);
+        actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        actionBar.setCustomView(v);
+
 
         //getFragmentManager().beginTransaction().replace(R.id.container, timelineFragment).commit();
     }
