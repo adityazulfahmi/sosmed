@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HereO</string>
+    <string name="app_name">Here-O</string>
     <string name="nama"><font size="14">Masukan nama lengkap anda</font></string>
     <string name="email"><font size="14">Masukan email anda</font></string>
     <string name="password"><font size="14">Masukan password anda</font></string>

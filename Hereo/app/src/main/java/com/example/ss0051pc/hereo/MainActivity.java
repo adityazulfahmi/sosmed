@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.zip.Inflater;
 
@@ -75,5 +76,12 @@ public class MainActivity extends AppCompatActivity {
     public void goToMessageDetails() {
         Intent intent = new Intent(this, MessageDetailsActivity.class);
         startActivity(intent);
+    }
+
+    public void sendHelpMessage() {
+        Toast.makeText(this.getApplicationContext(),"Post berhasil dibuat",Toast.LENGTH_SHORT).show();
+        View view = bottomNavigationView.findViewById(R.id.menuicon);
+        view.performClick();
+
     }
 }

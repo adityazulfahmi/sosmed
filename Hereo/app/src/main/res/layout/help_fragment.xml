@@ -86,5 +86,6 @@
         android:layout_height="wrap_content"
         android:src="@drawable/mintabantuan_button"
         android:background="#FFF"
+        android:id="@+id/mintabantuan"
         android:layout_marginTop="30dp"/>
 </LinearLayout>

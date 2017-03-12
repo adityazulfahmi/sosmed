@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Toast;
 
 /**
  * Created by SS0051pc on 3/11/2017.
@@ -29,6 +30,8 @@ public class RegisterActivity extends AppCompatActivity {
     public void goToHome(View v) {
         // does something very interesting
         Intent intent = new Intent(this, MainActivity.class);
+        Toast.makeText(this.getApplicationContext(),"Register Success",Toast.LENGTH_SHORT).show();
         startActivity(intent);
+
     }
 }

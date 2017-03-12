@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Toast;
 
 /**
  * Created by SS0051pc on 3/11/2017.
@@ -26,6 +27,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void goToHome(View v) {
         // does something very interesting
+        Toast.makeText(this.getApplicationContext(),"Login Success",Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
