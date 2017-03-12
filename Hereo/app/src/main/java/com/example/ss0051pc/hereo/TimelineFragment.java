@@ -23,7 +23,14 @@ public class TimelineFragment extends Fragment {
             container.removeAllViews();
         }
         View view = inflater.inflate(R.layout.timeline_fragment, container, false);
+        ImageButton ib = (ImageButton) view.findViewById(R.id.timeline);
+        ib.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((MainActivity)TimelineFragment.this.getActivity()).clickTimeline();
 
+            }
+        });
         return view;
     }
 

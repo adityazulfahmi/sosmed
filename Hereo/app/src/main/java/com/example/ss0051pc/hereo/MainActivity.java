@@ -82,6 +82,9 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this.getApplicationContext(),"Post berhasil dibuat",Toast.LENGTH_SHORT).show();
         View view = bottomNavigationView.findViewById(R.id.menuicon);
         view.performClick();
-
+    }
+    public void clickTimeline() {
+        Intent intent = new Intent(this, TimelineClickedActivity.class);
+        startActivity(intent);
     }
 }
