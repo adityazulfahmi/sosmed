@@ -1,6 +1,8 @@
 package com.example.ss0051pc.hereo;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.ActionBar;
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         bottomNavigationView = (BottomNavigationView)
                 findViewById(R.id.bottom_navigation);
@@ -66,6 +69,11 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setCustomView(v);
 
 
-        //getFragmentManager().beginTransaction().replace(R.id.container, timelineFragment).commit();
+        getFragmentManager().beginTransaction().replace(R.id.container, timelineFragment).commit();
+    }
+
+    public void goToMessageDetails() {
+        Intent intent = new Intent(this, MessageDetailsActivity.class);
+        startActivity(intent);
     }
 }

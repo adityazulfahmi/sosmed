@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chatdetailmockup"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chatboxmockup"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"/>
+</RelativeLayout>

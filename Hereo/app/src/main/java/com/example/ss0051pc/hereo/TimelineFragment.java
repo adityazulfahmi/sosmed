@@ -14,14 +14,22 @@ import android.widget.ImageButton;
  * Created by SS0051pc on 3/11/2017.
  */
 
-public class TimelineFragment extends ListFragment {
+public class TimelineFragment extends Fragment {
 
+    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        if (container != null) {
+            container.removeAllViews();
+        }
+        View view = inflater.inflate(R.layout.timeline_fragment, container, false);
+
+        return view;
     }
 
 
+
+    /*
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -35,10 +43,10 @@ public class TimelineFragment extends ListFragment {
                         new Problem(R.drawable.nobody, "Reka Ramadhan", "Butuh bantuan untuk menyebrang jalan, untuk membeli obat","3 menit yang lalu")
                 };
 
-        /*TimelineListAdapter adapter = new TimleineListAdapter (getActivity(),
+        TimelineListAdapter adapter = new TimleineListAdapter (getActivity(),
                 R.layout.item_list_timeline, data);
 
-        setListAdapter(adapter);*/
+        setListAdapter(adapter);
 
-    }
+    }*/
 }

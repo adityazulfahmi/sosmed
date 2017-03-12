@@ -12,6 +12,7 @@
         android:screenOrientation="portrait">
 
         <activity android:name=".SplashScreen"
+            android:screenOrientation="portrait"
             android:theme="@style/AppThemeNoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,6 +40,10 @@
 
         <activity android:name=".RegisterActivity"
             android:label="Daftar"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MessageDetailsActivity"
+            android:label="Aditya Zulfahmi"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"/>
 

@@ -5,6 +5,9 @@
     <string name="password"><font size="14">Masukan password anda</font></string>
     <string name="ttl"><font size="14">Masukan tanggal lahirmu</font></string>
     <string name="nik"><font size="14">Masukan nomor identitas (KTP/SIM)</font></string>
+    <string name="pesan"><font size="14">Butuh bantuan apa?</font></string>
+    <string name="orang"><font size="14">Contoh: 1, 2, 5</font></string>
+    <string name="imbalan"><font size="14">Contoh: uang, makanan</font></string>
 
 
 
